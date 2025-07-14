@@ -1,0 +1,207 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>AGROPECUARIA FINANCIERA</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/newstyles.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					<div class="logo">
+						<a href="index.html"><img src="LogoAgro/Logo2.png" alt="" width="140" height="80" /></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="contact.html">Sucursales</a></li>
+						    	<li><a href="contact.html">Avisos</a></li>
+						    	<li><a href="contact.html">Preguntas Frecuentes</a></li>
+						    	<!--<li><a href="experiance.html">Experiance</a></li>
+						    	<li><a href="shop.html">Company</a></li> -->
+								<li><a href="contact.html">Contactanos</a></li>						
+							</ul>
+							<div class="clear"></div>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+		    <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			<div>
+				<h3 class="h3_AgroFin">BENEFICIOS⭐</h3>
+				<ul class="m_2ul">
+					<li>Respondemos rápida y oportunamente a tu solicitud de crédito.</li>
+					<li>Conocemos mejor que nadie al sector agropecuario; por lo tanto, nuestros servicios son más acertados
+						 y acordes a tus necesidades.</li>
+					<li>Los plazos y formas de pago que brindamos se ajustan a los ciclos productivos de tu proyecto.</li>
+					<li>Debido a que nuestra principal fuente de fondeo es FIRA, las condiciones con las quete otorgamos 
+						los financiamientos son altamente competitivas.</li>
+				</ul>
+				<h3 class="h3_AgroFin">REQUISITOS ✅</h3>
+				<p class="p_AgroFin">Para ser sujeto de crédito es necesario:</p>
+				<ul class="m_2ul">
+					<li>Ser personas físicas o morales dedicadas al sector agropecuario.</li>
+					<li>Contar con una experiencia mínima de dos años en la actividad.</li>
+					<li>Presentar un proyecto viable en los aspectos técnicos, económicos y financieros.</li>
+					<li>Tener antecedentes positivos en el buró de crédito.</li>
+					<li>Proporcionar un nivel adecuado de garantías.</li>
+				</ul>
+			<h5 class="h5_AgroFin">Persona física 👤</h5>
+			<ul class="m_2ul">
+				<li>Ser mayores de edad —sin exceder de 65 años—.</li>
+				<li>Contar con estados financieros adecuados.</li>
+				<li>Que la unidad productiva sea rentable.</li>
+				<li>Tener acceso a mercados.</li>
+				<li>Estar dedicado a actividades lícitas.</li>
+				<li>Contar con cobertura adecuada de seguros</li>
+				<li>Documentación: solicitud  de crédito, comprobante de domicilio, identificación oficial, RFC, acta de nacimiento 
+					y/o matrimonio, escrituras de los bienes ofrecidos en garantía inscritos en el Registro Público de la Propiedad 
+					y del Comercio —RPPC—, flujo de efectivo, declaraciones de impuestos, referencias comerciales y bancarias.</li>
+			</ul>
+			<h5 class="h5_AgroFin">Persona moral 👥</h5>
+			<ul class="m_2ul">
+				<li>Que la sociedad se encuentre debidamente constituida, al corriente en sus obligaciones fiscales, 
+					laborales, financieras y legales.</li>
+				<li>Documentación: solicitud de crédito, acta constitutiva y poderes inscritos en el Registro Público de la 
+					Propiedad y del Comercio —RPPC—, RFC, estados financieros, identificaciones oficiales, comprobante de 
+					domicilio, escrituras de los bienes ofrecidos en garantía inscritos en el RPPC, flujo de efectivo,
+					 copia de las declaraciones de impuestos, referencias comerciales y bancarias.</li>
+			</ul>
+			</div>
+		    </div>
+		</div>
+	</div>
+		
+
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Products</h4>
+							<li><a href="#">Mens</a></li>
+							<li><a href="#">Womens</a></li>
+							<li><a href="#">Youth</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Careers and internships</a></li>
+							<li><a href="#">Sponserships</a></li>
+							<li><a href="#">team</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Shipping and Order Tracking</a></li>
+							<li><a href="#">Easy Returns</a></li>
+							<li><a href="#">Warranty</a></li>
+							<li><a href="#">Replacement Binding Parts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Change Region</span></a></dt>
+				        <dd>
+				            <ul>
+				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
+				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
+				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
