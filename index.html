@@ -56,6 +56,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      </script>
 </head>
 <body>
+
+	<!-- INICIO BOTON PARA SUBIR AL INICIO DE LA PÁGINA -->
+
+    <button id="btnSubir">↑</button>
+
+    <script>
+        // --- Lógica del botón ---
+
+        // 1. Obtener el botón
+        let btnSubir = document.getElementById("btnSubir");
+
+        // 2. Detectar el scroll en la página
+        window.onscroll = function() {
+            // Si el scroll es mayor a 400px, muestra el botón. Si no, lo oculta.
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                btnSubir.classList.add("mostrar");
+            } else {
+                btnSubir.classList.remove("mostrar");
+            }
+        };
+
+        // 3. Al hacer clic, ir al inicio de la página
+        btnSubir.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Para un desplazamiento suave
+            });
+        };
+    </script>
+
+		<!-- FIN SCRIPT DEL BOTON -->
+
 	<script>
 	window.addEventListener("DOMContentLoaded", function() {
 	if (!sessionStorage.getItem("bienvenidaMostrada")) {
@@ -104,9 +136,9 @@ title: '<strong>🚨 Prot&eacute;gete de los fraudes</strong>',
 					 <div class="menu">
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
-						    	<li><a href="contact.html">Sucursales</a></li>
-						    	<li><a href="contact.html">Avisos</a></li>
-						    	<li><a href="contact.html">Preguntas Frecuentes</a></li>
+						    	<li><a href="PreguntasRespuestas.html">Preguntas Frecuentes</a></li>
+						    	<li><a href="Avisos.html">Avisos</a></li>
+						    	<li><a href="Adjudicados.html">Adjudicaciones en Venta</a></li>
 						    	<!--<li><a href="experiance.html">Experiance</a></li>
 						    	<li><a href="shop.html">Company</a></li> -->
 								<li><a href="contact.html">Contactanos</a></li>						
@@ -360,46 +392,57 @@ title: '<strong>🚨 Prot&eacute;gete de los fraudes</strong>',
 				<div class="row">
 					<div class="col-md-3">
 						<ul class="footer_box">
-							<h4>Products</h4>
+							<h4>Columna 1 de 4</h4>
+							<!--
 							<li><a href="#">Mens</a></li>
 							<li><a href="#">Womens</a></li>
 							<li><a href="#">Youth</a></li>
+							-->
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
-							<h4>About</h4>
+							<h4>Columna 2 de 4</h4>
+							<!--
 							<li><a href="#">Careers and internships</a></li>
 							<li><a href="#">Sponserships</a></li>
 							<li><a href="#">team</a></li>
 							<li><a href="#">Catalog Request/Download</a></li>
+							-->
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
-							<h4>Customer Support</h4>
+							<h4>Columna 3 de 4</h4>
+							<!--
 							<li><a href="#">Contact Us</a></li>
 							<li><a href="#">Shipping and Order Tracking</a></li>
 							<li><a href="#">Easy Returns</a></li>
 							<li><a href="#">Warranty</a></li>
 							<li><a href="#">Replacement Binding Parts</a></li>
+							-->
 						</ul>
+						
 					</div>
 					<div class="col-md-3">
 						<ul class="footer_box">
-							<h4>Newsletter</h4>
+							<h4>SIGUENOS EN:</h4>
+							<!--
 							<div class="footer_search">
 				    		   <form>
 				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
 				    			<input type="submit" value="Go">
 				    		   </form>
 					        </div>
+							-->
 							<ul class="social">	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="facebook"><a href="https://www.facebook.com/share/12Mf2NGAaPd/" target="_blank"><span> </span></a></li>
+							  <!--
 							  <li class="twitter"><a href="#"><span> </span></a></li>
 							  <li class="instagram"><a href="#"><span> </span></a></li>	
 							  <li class="pinterest"><a href="#"><span> </span></a></li>	
-							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+							  <li class="youtube"><a href="#"><span> </span></a></li>
+							  -->									  				
 						    </ul>
 		   					
 						</ul>
@@ -407,8 +450,9 @@ title: '<strong>🚨 Prot&eacute;gete de los fraudes</strong>',
 				</div>
 				<div class="row footer_bottom">
 				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+			           <p>© 2025 Agropecuaria Financiera</p>
 		            </div>
+					<!--
 					  <dl id="sample" class="dropdown">
 				        <dt><a href="#"><span>Change Region</span></a></dt>
 				        <dd>
@@ -422,6 +466,7 @@ title: '<strong>🚨 Prot&eacute;gete de los fraudes</strong>',
 				            </ul>
 				         </dd>
 	   				  </dl>
+					-->
    				</div>
 			</div>
 		</div>
